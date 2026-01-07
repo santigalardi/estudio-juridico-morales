@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ESTILO: Cálido, Humano, Tradicional-Renovado */
+
+  /* Tu 'Charcoal' ahora es Café Espresso (casi negro) */
+  --color-vidal-charcoal: #1c1917;
+
+  /* Tu 'Copper' ahora es Color Ladrillo/Cognac */
+  --color-vidal-copper: #c2410c;
+
+  /* Versión más clara del cognac */
+  --color-vidal-copper-light: #fb923c;
+
+  /* Tu 'Taupe' ahora es un Beige Piedra */
+  --color-vidal-taupe: #a8a29e;
+
+  /* CAMBIO DE FUENTES */
+  --font-serif: 'EB Garamond', serif; /* Clásica, estilo libro antiguo */
+  --font-sans: 'Inter', sans-serif; /* Ultra moderna y legible */
+}
+
+.nav-link {
+  @apply text-sm font-medium text-gray-700 hover:text-gray-900 transition;
+}
+
+.mobile-link {
+  @apply text-lg font-medium text-gray-900;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
